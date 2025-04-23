@@ -1,0 +1,9 @@
+.div-footer {
+    background: #535bf2;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
