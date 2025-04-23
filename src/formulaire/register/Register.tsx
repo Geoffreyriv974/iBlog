@@ -17,7 +17,7 @@ function Register() {
                 <p>Déjà un compte :</p>
                 <a className="redirect-login" href="/login">Connectez-vous</a>
             </div>
-            <a href="/" className="btn-register">S'incrire</a>
+            <a href="/public" className="btn-register">S'incrire</a>
         </>
     );
 }

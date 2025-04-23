@@ -10,7 +10,7 @@ function Login() {
                     <input placeholder="mot de passe" type="password" required/>
                 </div>
             </div>
-            <a href="/" className="btn-login">Se connecter</a>
+            <a href="/public" className="btn-login">Se connecter</a>
         </>
     );
 }
