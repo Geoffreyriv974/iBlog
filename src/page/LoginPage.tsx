@@ -1,5 +1,5 @@
 import Footer from "../component/footer/Footer.tsx";
-import Login from "../component/login/Login.tsx";
+import Login from "../formulaire/login/Login.tsx";
 
 function LoginPage() {
 
