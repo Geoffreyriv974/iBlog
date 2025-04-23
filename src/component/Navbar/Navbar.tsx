@@ -10,8 +10,8 @@ function Navbar() {
                     <div className="nav-option">
                         <a className="btn-redirect-accueil" href="/">Accueil</a>
                         <a className="btn-redirect-accueil" href="/article">Article</a>
-                        <a className="btn-redirect-accueil" href="/article">Catégorie</a>
-                        <a className="btn-redirect-accueil" href="/catégorie">Admin</a>
+                        <a className="btn-redirect-accueil" href="/categorie">Catégorie</a>
+                        <a className="btn-redirect-accueil" href="/admin">Admin</a>
                         <a className="btn-redirect-accueil" href="/register">Inscrition</a>
                     </div>
                 </div>
