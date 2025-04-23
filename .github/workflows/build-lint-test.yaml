@@ -1,0 +1,61 @@
+name: master
+on:
+  pull_request:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "checkout code"
+        uses: actions/checkout@v4
+
+      - name: "setup nodeJS"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.14.0
+          cache: npm
+
+      - name: "install dependencies"
+        run: npm install
+
+      - name: "build app"
+        run: npm run build
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: "checkout code"
+        uses: actions/checkout@v4
+
+      - name: "setup nodeJS"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.14.0
+          cache: npm
+
+      - name: "install dependencies"
+        run: npm install
+
+      - name: "run test"
+        run: npm run test
+
+  lint:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: "checkout code"
+        uses: actions/checkout@v4
+
+      - name: "setup nodeJS"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.14.0
+          cache: npm
+
+      - name: "install dependencies"
+        run: npm install
+
+      - name: "run linter"
+        run: npm run lint
