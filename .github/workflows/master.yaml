@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-lint-test:
-    uses: .github/worklows/build-lint-test.yaml
+    uses: ./.github/worklows/build-lint-test.yaml
 
   release:
     needs: build-lint-test
