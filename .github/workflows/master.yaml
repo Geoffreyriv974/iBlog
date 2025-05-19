@@ -61,4 +61,4 @@ jobs:
           ssh-keyscan -H "${{vars.SSH_HOST}}" > ~/.ssh/known_hosts
 
       - name: "deploy on server distant"
-        run: rsync -avz --delete ./dist "${{vars.SSH_USERNAME}}@${{vars.SSH_HOST}}:/var/www/html"
+        run: rsync -avz --delete ./dist/ "${{vars.SSH_USERNAME}}@${{vars.SSH_HOST}}:/var/www/html/"
