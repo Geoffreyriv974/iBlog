@@ -12,7 +12,7 @@ function Navbar() {
                         <a className="btn-redirect-accueil" href="/article">Article</a>
                         <a className="btn-redirect-accueil" href="/categorie">Catégorie</a>
                         <a className="btn-redirect-accueil" href="/admin">Admin</a>
-                        <a className="btn-redirect-accueil" href="/register">Inscrition</a>
+                        <a className="btn-redirect-accueil" href="/register">Inscription</a>
                     </div>
                 </div>
             </nav>
